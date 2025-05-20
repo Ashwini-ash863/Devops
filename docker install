@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo yum update -y
+sudo yum install -y docker
+sudo service docker start
+sudo chkconfig docker on
+sudo usermod -a -G docker $USER
+newgrp docker
+docker run hello-world
