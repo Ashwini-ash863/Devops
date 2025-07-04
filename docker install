@@ -8,7 +8,7 @@ sudo usermod -a -G docker $USER
 newgrp docker
 docker run hello-world
 
-(powershell)
+(windows)
 Invoke-WebRequest -UseBasicParsing -OutFile docker-desktop-installer.exe https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe
 Start-Process .\docker-desktop-installer.exe
 docker --version
